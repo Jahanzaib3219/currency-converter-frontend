@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import axios from 'axios'
 import './App.css'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'https://currency-converter-backend-pmx1.onrender.com';
+const API_BASE = (import.meta.env.VITE_API_BASE || 'https://currency-converter-backend-pmx1.onrender.com').replace(/\/$/, '');
 
 function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => {
