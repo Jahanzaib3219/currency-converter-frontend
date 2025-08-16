@@ -158,10 +158,7 @@ export default function App() {
             )}
           </div>
         </div>
-
-        <p className="text-center text-muted small mt-3 mb-0">
-          Backend: <code>{API_BASE}</code>
-        </p>
+        
       </div>
     </div>
   )
